@@ -6,6 +6,7 @@
   --green-mid: #1d5c49;
   --gold: #d9a441;
   --gold-soft: #e7c27d;
+  --gold-text: #a87a22;
   --cream: #faf7f1;
   --ink: #1c2420;
   --ink-soft: #4c5a53;
@@ -56,7 +57,7 @@ h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); color: var(--green-deep); }
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-text);
   margin-bottom: 14px;
 }
 
@@ -218,7 +219,7 @@ h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); color: var(--green-deep); }
 
 .hero h1 em {
   font-style: italic;
-  color: var(--gold);
+  color: #b8862e;
 }
 
 .hero-lead {
@@ -492,6 +493,7 @@ h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); color: var(--green-deep); }
   padding: 44px;
   box-shadow: var(--shadow);
   max-width: 840px;
+  margin: 0 auto;
 }
 
 .founder-photo {
@@ -513,7 +515,7 @@ h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); color: var(--green-deep); }
 .founder-info h3 { font-size: 1.5rem; color: var(--green-deep); }
 
 .founder-role {
-  color: var(--gold);
+  color: var(--gold-text);
   font-weight: 600;
   font-size: 0.95rem;
   margin: 4px 0 14px;
@@ -539,7 +541,7 @@ h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); color: var(--green-deep); }
 .value-card {
   border-top: 3px solid var(--gold);
   background: var(--white);
-  border-radius: 0 0 var(--radius) var(--radius);
+  border-radius: var(--radius);
   padding: 28px 26px;
   box-shadow: var(--shadow);
 }
@@ -565,6 +567,12 @@ h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); color: var(--green-deep); }
 .contact-inner { text-align: center; max-width: 640px; }
 
 .contact-inner .section-sub { margin-bottom: 36px; }
+
+.contact-note {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
 
 /* ===== Footer ===== */
 .site-footer {
@@ -648,6 +656,8 @@ h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); color: var(--green-deep); }
   .hero { padding-top: 80px; }
 
   .hero-inner { padding-bottom: 72px; }
+
+  .hero h1 { font-size: 2.3rem; }
 
   .nav-toggle { display: flex; }
 

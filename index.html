@@ -1,418 +1,512 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trovanta Ltd — Building Businesses. Creating Opportunities. Driving Growth.</title>
-  <meta name="description" content="Trovanta Ltd is a diversified enterprise developing high-growth opportunities across agriculture, trade, branding, media, and consulting. We help businesses, entrepreneurs, and organizations grow through strategy, market access, and execution." />
-  <meta name="theme-color" content="#0e3b2e" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <link rel="canonical" href="https://trovanta.ng/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Trovanta Ltd" />
-  <meta property="og:title" content="Trovanta Ltd — Building Businesses. Creating Opportunities. Driving Growth." />
-  <meta property="og:description" content="A diversified Nigerian enterprise developing high-growth opportunities across agriculture, trade, branding, media, and consulting." />
-  <meta property="og:url" content="https://trovanta.ng/" />
-  <meta property="og:image" content="https://trovanta.ng/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Trovanta Ltd — Building Businesses. Creating Opportunities. Driving Growth." />
-  <meta name="twitter:description" content="A diversified Nigerian enterprise developing high-growth opportunities across agriculture, trade, branding, media, and consulting." />
-  <meta name="twitter:image" content="https://trovanta.ng/og-image.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trovanta Ltd — Building Businesses. Creating Opportunities. Driving Growth.</title>
+<meta name="description" content="Trovanta Ltd is a diversified enterprise developing high-growth opportunities across agriculture, trade, branding, media, and consulting. We help businesses, entrepreneurs, and organizations grow through strategy, market access, and execution.">
+<meta name="theme-color" content="#0e3b2e">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://trovanta.ng/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Trovanta Ltd">
+<meta property="og:title" content="Trovanta Ltd — Building Businesses. Creating Opportunities. Driving Growth.">
+<meta property="og:description" content="A diversified Nigerian enterprise developing high-growth opportunities across agriculture, trade, branding, media, and consulting.">
+<meta property="og:url" content="https://trovanta.ng/">
+<meta property="og:image" content="https://trovanta.ng/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Trovanta Ltd — Building Businesses. Creating Opportunities. Driving Growth.">
+<meta name="twitter:image" content="https://trovanta.ng/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+<style>/* ============================================================
+   Trovanta Design System — global entry point
+   Consumers link THIS file only. It is an @import manifest;
+   keep rules out of here.
+   ============================================================ */
+
+/* ============================================================
+   Trovanta — Webfonts
+   Fraunces (display serif) + Inter (body). Self-hosted woff2.
+   ============================================================ */
+
+/* ---- Inter ---- */
+
+
+
+
+
+/* ---- Fraunces ---- */
+
+
+
+
+
+
+/* ============================================================
+   Trovanta — Color tokens
+   Neutral ramp + 4 chromatic palettes (Tory Blue primary,
+   Zest, Sea Green, Studio). Derived from the uploaded template.
+   ============================================================ */
+
+:root {
+  /* ---- Neutrals (shade-0 darkest text → white) ---- */
+  --color-white: #ffffff;
+  --color-neutral-lightest: #f2f2f2;
+  --color-neutral-lighter: #d9d9da;
+  --color-neutral-light: #b4b3b5;
+  --color-neutral: #838184;
+  --color-neutral-dark: #514e52;
+  --color-neutral-darker: #1f1c21;
+  --color-neutral-darkest: #070309;
+
+  /* Neutral-on-light translucencies (borders, hovers, scrims) */
+  --color-neutral-darkest-5: color-mix(in srgb, var(--color-neutral-darkest), transparent 95%);
+  --color-neutral-darkest-10: color-mix(in srgb, var(--color-neutral-darkest), transparent 90%);
+  --color-neutral-darkest-15: color-mix(in srgb, var(--color-neutral-darkest), transparent 85%);
+  --color-neutral-darkest-20: color-mix(in srgb, var(--color-neutral-darkest), transparent 80%);
+  --color-neutral-darkest-30: color-mix(in srgb, var(--color-neutral-darkest), transparent 70%);
+  --color-neutral-darkest-40: color-mix(in srgb, var(--color-neutral-darkest), transparent 60%);
+  --color-neutral-darkest-50: color-mix(in srgb, var(--color-neutral-darkest), transparent 50%);
+  --color-neutral-darkest-60: color-mix(in srgb, var(--color-neutral-darkest), transparent 40%);
+
+  /* White translucencies (on dark surfaces) */
+  --color-white-5: color-mix(in srgb, var(--color-white), transparent 95%);
+  --color-white-10: color-mix(in srgb, var(--color-white), transparent 90%);
+  --color-white-15: color-mix(in srgb, var(--color-white), transparent 85%);
+  --color-white-20: color-mix(in srgb, var(--color-white), transparent 80%);
+  --color-white-30: color-mix(in srgb, var(--color-white), transparent 70%);
+  --color-white-40: color-mix(in srgb, var(--color-white), transparent 60%);
+  --color-white-50: color-mix(in srgb, var(--color-white), transparent 50%);
+  --color-white-60: color-mix(in srgb, var(--color-white), transparent 40%);
+
+  /* ---- Forest Green (PRIMARY brand color — Trovanta signature) ---- */
+  --color-forest-lightest: #e7efea;
+  --color-forest-lighter: #cfe0d7;
+  --color-forest-light: #4f8a76;
+  --color-forest: #0e3b2e;
+  --color-forest-dark: #0a2c22;
+  --color-forest-darker: #072019;
+  --color-forest-darkest: #04130f;
+
+  /* ---- Gold (accent / highlight — Trovanta signature) ---- */
+  --color-gold-lightest: #f8f1e2;
+  --color-gold-lighter: #efe0c2;
+  --color-gold-light: #e7c27d;
+  --color-gold: #c9a14b;
+  --color-gold-dark: #a8823a;
+  --color-gold-darker: #6e5424;
+  --color-gold-darkest: #4a3818;
+
+  /* ---- Tory Blue (secondary / utility accent) ---- */
+  --color-tory-blue-lightest: #e6eff5;
+  --color-tory-blue-lighter: #cedfec;
+  --color-tory-blue-light: #5490bf;
+  --color-tory-blue: #0b61a4;
+  --color-tory-blue-dark: #084d83;
+  --color-tory-blue-darker: #042641;
+  --color-tory-blue-darkest: #031d31;
+
+  /* ---- Zest (warm orange — energy, opportunity) ---- */
+  --color-zest-lightest: #fcf2e8;
+  --color-zest-lighter: #fae5d2;
+  --color-zest-light: #eda464;
+  --color-zest: #e67e22;
+  --color-zest-dark: #b8641b;
+  --color-zest-darker: #5c320d;
+  --color-zest-darkest: #45250a;
+
+  /* ---- Sea Green (growth, agriculture) ---- */
+  --color-sea-green-lightest: #eaf3ee;
+  --color-sea-green-lighter: #d5e7dd;
+  --color-sea-green-light: #6cad89;
+  --color-sea-green: #2e8b57;
+  --color-sea-green-dark: #246f45;
+  --color-sea-green-darker: #123722;
+  --color-sea-green-darkest: #0d291a;
+
+  /* ---- Studio (purple — creative, branding/media) ---- */
+  --color-studio-lightest: #f3ecf6;
+  --color-studio-lighter: #e8d9ee;
+  --color-studio-light: #af7cc5;
+  --color-studio: #8e44ad;
+  --color-studio-dark: #71368a;
+  --color-studio-darker: #381b45;
+  --color-studio-darkest: #2a1433;
+
+  /* ============================================================
+     Semantic aliases — reference these in product code
+     ============================================================ */
+  --accent: var(--color-forest);
+  --accent-hover: var(--color-forest-dark);
+  --accent-soft: var(--color-forest-lightest);
+
+  /* Gold highlight — eyebrows, italic emphasis, the logo mark */
+  --highlight: var(--color-gold);
+  --highlight-soft: var(--color-gold-lightest);
+
+  --text-strong: var(--color-neutral-darkest);
+  --text-body: var(--color-neutral-dark);
+  --text-muted: var(--color-neutral);
+  --text-on-accent: var(--color-white);
+
+  --surface-page: var(--color-white);
+  --surface-muted: var(--color-neutral-lightest);
+  --surface-card: var(--color-white);
+  --surface-tinted: var(--color-forest-lightest);
+  --surface-inverse: var(--color-forest);
+
+  --border-subtle: var(--color-neutral-darkest-15);
+  --border-strong: var(--color-neutral-darkest);
+
+  /* Division accent map (warm, brand-aligned sector color-coding) */
+  --division-agriculture: var(--color-sea-green);
+  --division-trade: var(--color-forest);
+  --division-branding: var(--color-gold-dark);
+  --division-media: var(--color-zest);
+  --division-consulting: var(--color-neutral-darker);
+}
+
+/* ============================================================
+   Trovanta — Typography tokens
+   Headings: Fraunces (serif display).  Body: Inter.
+   Mobile-first sizes; desktop sizes promoted at ≥992px.
+   ============================================================ */
+
+:root {
+  /* Families */
+  --font-heading: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  /* ---- Type scale (mobile defaults) ---- */
+  --text-h1: 2.75rem;   /* 44px */
+  --text-h2: 2.5rem;    /* 40px */
+  --text-h3: 2rem;      /* 32px */
+  --text-h4: 1.5rem;    /* 24px */
+  --text-h5: 1.25rem;   /* 20px */
+  --text-h6: 1.125rem;  /* 18px */
+  --text-large: 1.125rem;
+  --text-medium: 1rem;
+  --text-regular: 0.875rem;
+  --text-small: 0.8125rem;
+  --text-tiny: 0.75rem;
+
+  /* Line heights */
+  --leading-display: 1.1;
+  --leading-heading: 1.2;
+  --leading-snug: 1.3;
+  --leading-normal: 1.5;
+
+  /* Tracking */
+  --tracking-display: -0.02em;
+  --tracking-heading: -0.01em;
+  --tracking-eyebrow: 0.08em;
+}
+
+@media (min-width: 992px) {
+  :root {
+    --text-h1: 4.5rem;    /* 72px */
+    --text-h2: 3.25rem;   /* 52px */
+    --text-h3: 2.75rem;   /* 44px */
+    --text-h4: 2.25rem;   /* 36px */
+    --text-h5: 1.75rem;   /* 28px */
+    --text-h6: 1.375rem;  /* 22px */
+    --text-large: 1.375rem;
+    --text-medium: 1.125rem;
+    --text-regular: 1rem;
+    --text-small: 0.875rem;
+    --text-tiny: 0.75rem;
+  }
+}
+
+/* ============================================================
+   Trovanta — Spacing, radii, containers, elevation
+   ============================================================ */
+
+:root {
+  /* Spacing scale (rem) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-18: 4.5rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-28: 7rem;
+  --space-30: 7.5rem;
+
+  /* Section rhythm — vertical padding for page sections */
+  --section-y: 4rem;          /* mobile */
+  --section-x: 5%;            /* horizontal gutter */
+
+  /* Radii (sleek / outlined system) */
+  --radius-button: 0.75rem;   /* 12px */
+  --radius-badge: 0.375rem;   /* tag radius 6px */
+  --radius-input: 0.75rem;    /* 12px */
+  --radius-card: 1rem;        /* 16px */
+  --radius-image: 1rem;       /* 16px */
+  --radius-checkbox: 0.25rem;
+  --radius-full: 9999px;
+
+  /* Containers */
+  --container-xxs: 20rem;
+  --container-xs: 25rem;
+  --container-sm: 30rem;
+  --container-md: 35rem;
+  --container-lg: 48rem;
+  --container-xl: 64rem;
+  --container-xxl: 80rem;
+
+  /* Breakpoints (reference) */
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 992px;
+
+  /* Elevation — soft, low-contrast (premium, not heavy) */
+  --shadow-xs: 0 1px 2px rgba(7, 3, 9, 0.05);
+  --shadow-sm: 0 2px 8px rgba(7, 3, 9, 0.06);
+  --shadow-md: 0 12px 32px rgba(7, 3, 9, 0.08);
+  --shadow-lg: 0 24px 64px rgba(7, 3, 9, 0.12);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --dur-fast: 150ms; /* @kind other */
+  --dur-base: 250ms; /* @kind other */
+  --dur-slow: 600ms; /* @kind other */
+}
+
+@media (min-width: 768px) {
+  :root { --section-y: 6rem; }
+}
+@media (min-width: 992px) {
+  :root { --section-y: 7rem; }
+}
+
+/* ============================================================
+   Trovanta — Color schemes
+   A scheme sets background / text / border / accent / highlight
+   for a section. Apply the class to a <section>; children inherit.
+   ============================================================ */
+
+.scheme-1,
+.scheme-2,
+.scheme-3,
+.scheme-inverse {
+  background-color: var(--color-scheme-background);
+  color: var(--color-scheme-text);
+}
+
+/* Scheme 1 — White (default page surface) */
+.scheme-1 {
+  --color-scheme-background: var(--color-white);
+  --color-scheme-foreground: var(--color-white);
+  --color-scheme-text: var(--color-neutral-darkest);
+  --color-scheme-border: var(--color-neutral-darkest-15);
+  --color-scheme-accent: var(--color-forest);
+  --color-scheme-highlight: var(--color-gold-dark);
+  --color-scheme-btn-text: var(--color-white);
+}
+
+/* Scheme 2 — Neutral Lightest (quiet alternation) */
+.scheme-2 {
+  --color-scheme-background: var(--color-neutral-lightest);
+  --color-scheme-foreground: var(--color-white);
+  --color-scheme-text: var(--color-neutral-darkest);
+  --color-scheme-border: var(--color-neutral-darkest-15);
+  --color-scheme-accent: var(--color-forest);
+  --color-scheme-highlight: var(--color-gold-dark);
+  --color-scheme-btn-text: var(--color-white);
+}
+
+/* Scheme 3 — Forest tint (tinted feature sections) */
+.scheme-3 {
+  --color-scheme-background: var(--color-forest-lightest);
+  --color-scheme-foreground: var(--color-white);
+  --color-scheme-text: var(--color-neutral-darkest);
+  --color-scheme-border: var(--color-neutral-darkest-15);
+  --color-scheme-accent: var(--color-forest);
+  --color-scheme-highlight: var(--color-gold-dark);
+  --color-scheme-btn-text: var(--color-white);
+}
+
+/* Scheme Inverse — Deep forest green (premium dark sections,
+   the hero band, CTA, contact). The brand's signature surface. */
+.scheme-inverse {
+  --color-scheme-background: var(--color-forest);
+  --color-scheme-foreground: var(--color-forest-dark);
+  --color-scheme-text: var(--color-white);
+  --color-scheme-border: var(--color-white-15);
+  --color-scheme-accent: var(--color-gold-light);
+  --color-scheme-highlight: var(--color-gold-light);
+  --color-scheme-btn-text: var(--color-forest);
+}
+
+/* ============================================================
+   Trovanta — Base element styles & shared utilities
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-medium);
+  line-height: var(--leading-normal);
+  color: var(--text-strong);
+  background-color: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--leading-heading);
+  letter-spacing: var(--tracking-heading);
+  margin: 0;
+  color: var(--color-scheme-text, var(--text-strong));
+  text-wrap: balance;
+}
+
+h1 { font-size: var(--text-h1); line-height: var(--leading-display); letter-spacing: var(--tracking-display); }
+h2 { font-size: var(--text-h2); }
+h3 { font-size: var(--text-h3); }
+h4 { font-size: var(--text-h4); }
+h5 { font-size: var(--text-h5); }
+h6 { font-size: var(--text-h6); }
+
+p { margin: 0; text-wrap: pretty; }
+
+a { color: inherit; text-decoration: none; }
+
+img { display: block; max-width: 100%; }
+
+button:not(:disabled),
+[role="button"]:not(:disabled) { cursor: pointer; }
+
+/* ---- Shared layout utilities ---- */
+.t-container {
+  width: 100%;
+  max-width: var(--container-xxl);
+  margin-inline: auto;
+  padding-inline: var(--section-x);
+}
+
+.t-section {
+  padding-block: var(--section-y);
+  padding-inline: var(--section-x);
+}
+
+/* Eyebrow / kicker label above headings */
+.t-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-scheme-highlight, var(--highlight));
+}
+
+/* ---- Logo lockup (brand wordmark — Trovanta has no icon mark,
+   so we build a typographic monogram + wordmark) ---- */
+.t-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.01em;
+  color: var(--color-scheme-text, var(--text-strong));
+}
+.t-logo__mark {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.6rem;
+  background: var(--color-gold);
+  color: var(--color-forest);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+}
+.t-logo__word { font-size: 1.3rem; }
+.t-logo__word b { font-weight: var(--font-weight-regular); color: var(--color-gold-dark); font-size: 0.7em; letter-spacing: 0.06em; text-transform: uppercase; margin-left: 0.15em; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+</style>
+<style>
+  @keyframes trvMarquee { from { transform: translateX(0); } to { transform: translateX(-33.333%); } }
+  @media (prefers-reduced-motion: reduce) {
+    .trv-marquee > div { animation: none !important; }
+  }
+  /* Tablet */
+  @media (max-width: 991px) {
+    .trv-nav-links, .trv-nav-cta { display: none !important; }
+    .trv-nav-burger { display: flex !important; }
+    .trv-div-grid, .trv-values-grid, .trv-3col { grid-template-columns: 1fr 1fr !important; }
+    .trv-about-grid, .trv-founder { grid-template-columns: 1fr !important; gap: var(--space-12) !important; }
+  }
+  /* Mobile */
+  @media (max-width: 640px) {
+    .trv-div-grid, .trv-values-grid, .trv-3col, .trv-focus-grid { grid-template-columns: 1fr !important; }
+    .trv-about-grid > div:last-child { grid-template-columns: 1fr !important; }
+  }
+</style>
 </head>
 <body>
 
-  <!-- ===== Header ===== -->
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a href="#top" class="logo" aria-label="Trovanta Ltd home">
-        <span class="logo-mark" aria-hidden="true">T</span>
-        <span class="logo-text">Trovanta<span class="logo-ltd">Ltd</span></span>
-      </a>
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#divisions">What We Do</a>
-        <a href="#initiatives">Initiatives</a>
-        <a href="#values">Values</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#contact" class="nav-cta">Get in Touch</a>
-      </nav>
-      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- ===== Hero ===== -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <p class="eyebrow reveal">A Diversified Enterprise Group</p>
-        <h1 class="reveal">Building Businesses.<br />Creating Opportunities.<br /><em>Driving Growth.</em></h1>
-        <p class="hero-lead reveal">
-          Trovanta Ltd develops high-growth opportunities across agriculture, trade, branding,
-          media, and consulting — helping businesses, entrepreneurs, and organizations grow
-          through strategic thinking, market access, creative execution, and partnership-driven solutions.
-        </p>
-        <div class="hero-actions reveal">
-          <a href="#divisions" class="btn btn-primary">Explore Our Divisions</a>
-          <a href="#contact" class="btn btn-ghost">Work With Us</a>
-        </div>
-      </div>
-      <div class="hero-strip" aria-hidden="true">
-        <div class="strip-track">
-          <span>Agriculture</span><span>•</span>
-          <span>Trade &amp; Business Development</span><span>•</span>
-          <span>Branding &amp; Creative Strategy</span><span>•</span>
-          <span>Media &amp; Content</span><span>•</span>
-          <span>Consulting &amp; Advisory</span><span>•</span>
-          <span>Agriculture</span><span>•</span>
-          <span>Trade &amp; Business Development</span><span>•</span>
-          <span>Branding &amp; Creative Strategy</span><span>•</span>
-          <span>Media &amp; Content</span><span>•</span>
-          <span>Consulting &amp; Advisory</span><span>•</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== About ===== -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Who We Are</p>
-          <h2>An ecosystem that connects ideas, people, businesses, and markets</h2>
-        </div>
-        <div class="about-grid">
-          <p class="about-lead reveal">
-            Trovanta Ltd is a diversified enterprise focused on identifying, developing, and scaling
-            high-growth opportunities across multiple industries. We operate at the intersection of
-            business strategy, market access, innovation, and execution — combining commercial
-            expertise, industry networks, and creative problem-solving to develop ventures,
-            facilitate opportunities, and deliver solutions that drive measurable impact.
-          </p>
-          <div class="about-cards">
-            <article class="info-card reveal">
-              <h3>Our Vision</h3>
-              <p>To become a globally recognized enterprise that creates opportunities, builds
-              sustainable businesses, and drives economic growth across industries and markets.</p>
-            </article>
-            <article class="info-card reveal">
-              <h3>Our Mission</h3>
-              <p>To identify opportunities, connect resources, develop innovative solutions, and help
-              businesses and entrepreneurs achieve sustainable growth through strategy, execution,
-              and market access.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Philosophy ===== -->
-    <section class="section section-dark" id="philosophy">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow eyebrow-light">Core Philosophy</p>
-          <h2>Build. Connect. Scale.</h2>
-          <p class="section-sub">Successful businesses require more than good ideas. They need clear
-          strategy, access to markets, strong branding, effective execution, and sustainable growth
-          systems. Our role is to bridge these gaps.</p>
-        </div>
-        <div class="philosophy-grid">
-          <div class="philosophy-step reveal">
-            <span class="step-num">01</span>
-            <h3>Build</h3>
-            <p>We develop ventures, brands, and strategies from the ground up — turning ideas into
-            structured, investable, operational businesses.</p>
-          </div>
-          <div class="philosophy-step reveal">
-            <span class="step-num">02</span>
-            <h3>Connect</h3>
-            <p>We link producers to buyers, businesses to partners, and brands to audiences — opening
-            access to local and international markets.</p>
-          </div>
-          <div class="philosophy-step reveal">
-            <span class="step-num">03</span>
-            <h3>Scale</h3>
-            <p>We install the systems, partnerships, and execution discipline that turn early traction
-            into sustainable, long-term growth.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Divisions ===== -->
-    <section class="section" id="divisions">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">What We Do</p>
-          <h2>Five divisions. One platform for growth.</h2>
-          <p class="section-sub">Trovanta operates through multiple business divisions and strategic
-          initiatives designed to create value across industries.</p>
-        </div>
-        <div class="division-grid">
-
-          <article class="division-card reveal">
-            <div class="division-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V9"/><path d="M12 9C12 5 9 2 4 2c0 5 3 8 8 7z"/><path d="M12 13c0-4 3-7 8-7 0 5-3 8-8 7z"/></svg>
-            </div>
-            <h3>Agriculture</h3>
-            <p>Strengthening agricultural value chains and improving access between producers, buyers, and markets.</p>
-            <ul>
-              <li>Agribusiness consulting</li>
-              <li>Market access solutions</li>
-              <li>Agricultural trade facilitation</li>
-              <li>Supply chain development</li>
-              <li>Agricultural investment opportunities</li>
-            </ul>
-          </article>
-
-          <article class="division-card reveal">
-            <div class="division-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 3.8 5.6 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.6-3.8-9S9.5 5.5 12 3z"/></svg>
-            </div>
-            <h3>Trade &amp; Business Development</h3>
-            <p>Helping businesses expand their reach and connect with valuable opportunities in local and international markets.</p>
-            <ul>
-              <li>Business matchmaking</li>
-              <li>Strategic partnerships</li>
-              <li>Import &amp; export opportunities</li>
-              <li>Market entry support</li>
-              <li>Commercial networking</li>
-            </ul>
-          </article>
-
-          <article class="division-card reveal">
-            <div class="division-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg>
-            </div>
-            <h3>Branding &amp; Creative Strategy</h3>
-            <p>Helping businesses communicate effectively and stand out in competitive markets.</p>
-            <ul>
-              <li>Brand development</li>
-              <li>Brand positioning</li>
-              <li>Marketing strategy</li>
-              <li>Creative direction</li>
-              <li>Visual identity consulting</li>
-            </ul>
-          </article>
-
-          <article class="division-card reveal">
-            <div class="division-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M10 9l5 3-5 3z"/><path d="M8 22h8"/></svg>
-            </div>
-            <h3>Media &amp; Content Development</h3>
-            <p>Helping brands connect with audiences through compelling and purposeful content.</p>
-            <ul>
-              <li>Content strategy</li>
-              <li>Digital storytelling</li>
-              <li>Brand media production</li>
-              <li>Creative campaigns</li>
-              <li>Business communications</li>
-            </ul>
-          </article>
-
-          <article class="division-card reveal">
-            <div class="division-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l6-6"/><path d="M3 21v-5"/><path d="M3 21h5"/><path d="M9 8l4 4 8-8"/><path d="M16 4h5v5"/></svg>
-            </div>
-            <h3>Consulting &amp; Advisory</h3>
-            <p>Working with clients to identify challenges, develop solutions, and implement strategies for sustainable growth.</p>
-            <ul>
-              <li>Business consulting &amp; growth strategy</li>
-              <li>Business planning</li>
-              <li>Market research</li>
-              <li>Operational development</li>
-              <li>Opportunity assessment</li>
-            </ul>
-          </article>
-
-          <article class="division-card division-card-cta reveal">
-            <h3>Future Growth Sectors</h3>
-            <p>Trovanta is built as a multi-sector platform. As we grow, we continue to identify and
-            develop new ventures and opportunities across emerging industries.</p>
-            <a href="#contact" class="text-link">Partner with us &rarr;</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Strategic Initiatives ===== -->
-    <section class="section section-tint" id="initiatives">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Current Focus Areas</p>
-          <h2>Where our energy is going right now</h2>
-          <p class="section-sub">Trovanta is an enterprise in active development. Rather than overstate
-          a track record, we&rsquo;d rather show you exactly what we&rsquo;re building today.</p>
-        </div>
-        <div class="initiative-grid">
-          <article class="initiative-card reveal">
-            <span class="status-chip">Active</span>
-            <h3>Agricultural Trade &amp; Market Access</h3>
-            <p>Building direct relationships between Nigerian producers and buyers — mapping value
-            chains, facilitating trade, and opening market access at home and abroad.</p>
-          </article>
-          <article class="initiative-card reveal">
-            <span class="status-chip">Active</span>
-            <h3>Branding &amp; Media for Growing Businesses</h3>
-            <p>Developing brand identities, content, and campaigns that help Nigerian SMEs and
-            startups stand out and win customers.</p>
-          </article>
-          <article class="initiative-card reveal">
-            <span class="status-chip chip-dev">In Development</span>
-            <h3>Trade Partnerships &amp; Matchmaking</h3>
-            <p>Growing a network of commercial partners and connecting businesses to import, export,
-            and distribution opportunities.</p>
-          </article>
-          <article class="initiative-card reveal">
-            <span class="status-chip chip-dev">In Development</span>
-            <h3>Advisory for Entrepreneurs</h3>
-            <p>Business planning, market research, and opportunity assessment for founders preparing
-            to launch or scale.</p>
-          </article>
-        </div>
-        <p class="company-facts reveal">Trovanta Ltd is a fully registered Nigerian company with the Corporate Affairs Commission (CAC).</p>
-      </div>
-    </section>
-
-    <!-- ===== Approach ===== -->
-    <section class="section" id="approach">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Our Approach</p>
-          <h2>How we work</h2>
-        </div>
-        <div class="approach-grid">
-          <div class="approach-item reveal">
-            <h3>Strategic Thinking</h3>
-            <p>Every project begins with understanding objectives, opportunities, and long-term goals.</p>
-          </div>
-          <div class="approach-item reveal">
-            <h3>Practical Execution</h3>
-            <p>Ideas only create value when implemented. We focus on delivering practical, actionable solutions.</p>
-          </div>
-          <div class="approach-item reveal">
-            <h3>Partnership-Driven Growth</h3>
-            <p>Collaboration creates stronger outcomes than working alone.</p>
-          </div>
-          <div class="approach-item reveal">
-            <h3>Long-Term Value Creation</h3>
-            <p>The goal is not short-term gains but sustainable growth and lasting impact.</p>
-          </div>
-        </div>
-
-        <div class="serve-block reveal">
-          <h3 class="serve-title">Who we serve</h3>
-          <ul class="serve-chips">
-            <li>Startups</li>
-            <li>Small businesses</li>
-            <li>Growing brands</li>
-            <li>Agricultural enterprises</li>
-            <li>Entrepreneurs</li>
-            <li>Investors</li>
-            <li>Organizations</li>
-            <li>Commercial partners</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Values ===== -->
-    <section class="section section-tint" id="values">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Core Values</p>
-          <h2>What we stand for</h2>
-        </div>
-        <div class="values-grid">
-          <div class="value-card reveal"><h3>Excellence</h3><p>Delivering high-quality work and maintaining professional standards.</p></div>
-          <div class="value-card reveal"><h3>Innovation</h3><p>Finding creative solutions to business challenges and opportunities.</p></div>
-          <div class="value-card reveal"><h3>Integrity</h3><p>Operating with honesty, transparency, and accountability.</p></div>
-          <div class="value-card reveal"><h3>Collaboration</h3><p>Building meaningful partnerships that create mutual value.</p></div>
-          <div class="value-card reveal"><h3>Growth</h3><p>Continuously developing people, businesses, and opportunities.</p></div>
-          <div class="value-card reveal"><h3>Impact</h3><p>Focusing on outcomes that create measurable and lasting value.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Leadership ===== -->
-    <section class="section" id="leadership">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Leadership</p>
-          <h2>The person behind Trovanta</h2>
-        </div>
-        <div class="founder-card reveal">
-          <img class="founder-photo" src="founder.jpg" alt="Joshua Michael, Founder and Chief Executive Officer of Trovanta Ltd" />
-          <div class="founder-info">
-            <h3>Joshua Michael</h3>
-            <p class="founder-role">Founder &amp; Chief Executive Officer</p>
-            <p class="founder-bio">Joshua Michael founded Trovanta on a simple conviction: African
-            businesses don&rsquo;t lack ideas — they lack access, structure, and execution. He leads the
-            company&rsquo;s strategy, partnerships, and ventures across its five divisions.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Vision band ===== -->
-    <section class="section section-dark vision-band">
-      <div class="container reveal">
-        <p class="eyebrow eyebrow-light">The Long-Term Vision</p>
-        <blockquote>
-          A trusted platform for business development, opportunity creation, strategic partnerships,
-          and enterprise growth — across Africa and international markets.
-        </blockquote>
-      </div>
-    </section>
-
-    <!-- ===== Contact ===== -->
-    <section class="section" id="contact">
-      <div class="container contact-inner reveal">
-        <p class="eyebrow">Get in Touch</p>
-        <h2>Let&rsquo;s build something together</h2>
-        <p class="section-sub">Whether you&rsquo;re an entrepreneur with an idea, a business seeking new
-        markets, or a partner exploring opportunities — we&rsquo;d like to hear from you.</p>
-        <a href="mailto:trovanta.ng@gmail.com" class="btn btn-primary btn-lg">Send Us an Email</a>
-        <p class="contact-note">Trovanta Ltd &middot; Registered with the CAC &middot; Nigeria</p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ===== Footer ===== -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="#top" class="logo logo-footer">
-          <span class="logo-mark" aria-hidden="true">T</span>
-          <span class="logo-text">Trovanta<span class="logo-ltd">Ltd</span></span>
-        </a>
-        <p>Building Businesses. Creating Opportunities. Driving Growth.</p>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <a href="#about">About</a>
-        <a href="#divisions">What We Do</a>
-        <a href="#initiatives">Initiatives</a>
-        <a href="#approach">Our Approach</a>
-        <a href="#values">Values</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-    <div class="container footer-legal">
-      <p>&copy; <span id="year">2026</span> Trovanta Ltd. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<div id="root"><header style="position: sticky; top: 0px; z-index: 100; background: var(--color-white); backdrop-filter: none; border-bottom: 1px solid transparent; transition: border-color var(--dur-base), background var(--dur-base);"><div class="t-container" style="display: flex; align-items: center; justify-content: space-between; min-height: 4.5rem; padding-block: 0.75rem;"><a href="#top" class="t-logo"><span class="t-logo__mark">T</span><span class="t-logo__word">Trovanta<b>Ltd</b></span></a><nav class="trv-nav-links" style="display: flex; align-items: center; gap: 0.25rem;"><a href="#about" style="padding: 0.5rem 0.9rem; font-size: var(--text-medium); color: var(--text-body); border-radius: 0.5rem; transition: color var(--dur-fast);">About</a><a href="#divisions" style="padding: 0.5rem 0.9rem; font-size: var(--text-medium); color: var(--text-body); border-radius: 0.5rem; transition: color var(--dur-fast);">What We Do</a><a href="#initiatives" style="padding: 0.5rem 0.9rem; font-size: var(--text-medium); color: var(--text-body); border-radius: 0.5rem; transition: color var(--dur-fast);">Initiatives</a><a href="#values" style="padding: 0.5rem 0.9rem; font-size: var(--text-medium); color: var(--text-body); border-radius: 0.5rem; transition: color var(--dur-fast);">Values</a><a href="#leadership" style="padding: 0.5rem 0.9rem; font-size: var(--text-medium); color: var(--text-body); border-radius: 0.5rem; transition: color var(--dur-fast);">Leadership</a></nav><div class="trv-nav-cta" style="display: flex; align-items: center; gap: 0.75rem;"><a data-trv="button" data-variant="primary" class="" href="#contact" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-family: var(--font-body); font-weight: var(--font-weight-medium); line-height: 1.2; border-radius: var(--radius-button); cursor: pointer; opacity: 1; transition: background var(--dur-base) var(--ease-standard), border-color var(--dur-base) var(--ease-standard), transform var(--dur-fast) var(--ease-standard); white-space: nowrap; padding: 0.5rem 1rem; font-size: var(--text-small); background: var(--accent); color: var(--color-white); border: 1px solid var(--accent);">Get in Touch</a></div><button class="trv-nav-burger" aria-label="Menu" style="display: none; flex-direction: column; gap: 4px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0.5rem;"><span style="width: 22px; height: 2px; background: var(--text-strong);"></span><span style="width: 22px; height: 2px; background: var(--text-strong);"></span><span style="width: 22px; height: 2px; background: var(--text-strong);"></span></button></div></header><main><section id="top" class="scheme-inverse" style="position: relative; padding-inline: var(--section-x); padding-top: var(--space-20); padding-bottom: var(--space-16); overflow: hidden;"><div aria-hidden="true" style="position: absolute; top: -18%; right: -8%; width: min(46vw, 620px); height: min(46vw, 620px); border-radius: 50%; background: var(--color-forest-dark); opacity: 0.6;"></div><div aria-hidden="true" style="position: absolute; bottom: -30%; left: -12%; width: min(40vw, 520px); height: min(40vw, 520px); border-radius: 50%; background: var(--color-forest-light); opacity: 0.12;"></div><div class="t-container" style="position: relative; text-align: center; display: flex; flex-direction: column; align-items: center;"><span style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.9rem; border-radius: var(--radius-full); border: 1px solid var(--color-white-20); color: var(--color-gold-light); font-size: var(--text-small); font-weight: var(--font-weight-semibold); letter-spacing: 0.04em; margin-bottom: 1.75rem;"><span style="width: 6px; height: 6px; border-radius: 50%; background: var(--color-gold-light);"></span>A Diversified Enterprise Group</span><h1 style="max-width: 16ch; margin: 0px auto; color: var(--color-white);">Building Businesses. Creating Opportunities. <em style="font-style: italic; color: var(--color-gold-light);">Driving Growth.</em></h1><p style="max-width: 62ch; margin: 1.75rem auto 0px; font-size: var(--text-large); color: var(--color-white-60);">Trovanta Ltd develops high-growth opportunities across agriculture, trade, branding, media, and consulting — helping businesses, entrepreneurs, and organizations grow through strategic thinking, market access, creative execution, and partnership-driven solutions.</p><div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2.25rem;"><a data-trv="button" data-variant="primary" class="" href="#divisions" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-family: var(--font-body); font-weight: var(--font-weight-medium); line-height: 1.2; border-radius: var(--radius-button); cursor: pointer; opacity: 1; transition: background var(--dur-base) var(--ease-standard), border-color var(--dur-base) var(--ease-standard), transform var(--dur-fast) var(--ease-standard); white-space: nowrap; padding: 1rem 2rem; font-size: var(--text-large); background: var(--color-gold); color: var(--color-forest); border-color: var(--color-gold); border-top-style: ; border-top-width: ; border-right-style: ; border-right-width: ; border-bottom-style: ; border-bottom-width: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ;">Explore Our Divisions</a><a data-trv="button" data-variant="secondary" class="" href="#contact" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-family: var(--font-body); font-weight: var(--font-weight-medium); line-height: 1.2; border-radius: var(--radius-button); cursor: pointer; opacity: 1; transition: background var(--dur-base) var(--ease-standard), border-color var(--dur-base) var(--ease-standard), transform var(--dur-fast) var(--ease-standard); white-space: nowrap; padding: 1rem 2rem; font-size: var(--text-large); background: transparent; color: var(--color-white); border-color: var(--color-white-20); border-top-style: ; border-top-width: ; border-right-style: ; border-right-width: ; border-bottom-style: ; border-bottom-width: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; backdrop-filter: blur(10px);">Work With Us</a></div><div style="width: 100%; margin-top: var(--space-16); border-radius: var(--radius-image); overflow: hidden; max-width: var(--container-xl); box-shadow: var(--shadow-lg);"><img src="assets/8311a178.jpg" alt="Collaborative business growth" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block;"></div></div></section><div class="trv-marquee scheme-1" style="border-bottom: 1px solid var(--border-subtle); overflow: hidden; white-space: nowrap;"><div style="display: inline-flex; gap: 2.5rem; padding: 1.1rem 1.25rem; animation: 32s linear 0s infinite normal none running trvMarquee;"><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Agriculture<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Trade &amp; Business Development<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Branding &amp; Creative Strategy<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Media &amp; Content<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Consulting &amp; Advisory<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Agriculture<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Trade &amp; Business Development<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Branding &amp; Creative Strategy<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Media &amp; Content<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Consulting &amp; Advisory<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Agriculture<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Trade &amp; Business Development<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Branding &amp; Creative Strategy<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Media &amp; Content<span style="color: var(--color-gold-dark);">•</span></span><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--text-muted); display: inline-flex; align-items: center; gap: 2.5rem;">Consulting &amp; Advisory<span style="color: var(--color-gold-dark);">•</span></span></div></div><section id="about" class="scheme-1 t-section"><div class="t-container"><div class="trv-about-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: center;"><div><p class="t-eyebrow" style="margin-bottom: 0.75rem;">Who We Are</p><h2 style="margin-bottom: 1.25rem;">An ecosystem that connects ideas, people, businesses, and markets</h2><p style="color: var(--text-body); font-size: var(--text-large); margin-bottom: 1rem;">Trovanta Ltd is a diversified enterprise focused on identifying, developing, and scaling high-growth opportunities across multiple industries.</p><p style="color: var(--text-body);">We operate at the intersection of business strategy, market access, innovation, and execution — combining commercial expertise, industry networks, and creative problem-solving to develop ventures, facilitate opportunities, and deliver solutions that drive measurable impact.</p></div><div style="display: flex; flex-direction: column; gap: 1.25rem;"><div data-trv="card" class="" style="background: var(--color-forest-lightest); border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: var(--radius-card); padding: 2rem; overflow: hidden; transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out); transform: translateY(0px); box-shadow: none;"><h3 style="font-size: var(--text-h5); margin-bottom: 0.5rem;">Our Vision</h3><p style="color: var(--text-body); margin: 0px;">To become a globally recognized enterprise that creates opportunities, builds sustainable businesses, and drives economic growth across industries and markets.</p></div><div data-trv="card" class="" style="background: var(--color-gold-lightest); border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: var(--radius-card); padding: 2rem; overflow: hidden; transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out); transform: translateY(0px); box-shadow: none;"><h3 style="font-size: var(--text-h5); margin-bottom: 0.5rem;">Our Mission</h3><p style="color: var(--text-body); margin: 0px;">To identify opportunities, connect resources, develop innovative solutions, and help businesses and entrepreneurs achieve sustainable growth through strategy, execution, and market access.</p></div></div></div></div></section><section class="scheme-3 t-section"><div class="t-container"><div data-trv="section-heading" class="" style="text-align: center; max-width: var(--container-md); margin-inline: auto;"><p class="t-eyebrow" style="margin: 0px 0px 0.75rem;">Core Philosophy</p><h2 style="font-size: var(--text-h2); margin-bottom: 1rem;">Build. Connect. Scale.</h2><p style="font-size: var(--text-large); color: var(--text-body); line-height: 1.5;">Successful businesses require more than good ideas. They need clear strategy, access to markets, strong branding, effective execution, and sustainable growth systems. Our role is to bridge these gaps.</p></div><div class="trv-3col" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-12); margin-top: var(--space-16);"><div style="border-top: 2px solid var(--accent); padding-top: 1.25rem;"><div data-trv="step-card" class="" style="display: flex; flex-direction: column; gap: 0.75rem;"><span style="font-family: var(--font-heading); font-weight: var(--font-weight-medium); font-size: var(--text-h3); color: var(--accent); line-height: 1;">01</span><h3 style="font-size: var(--text-h4); margin-top: 0.25rem;">Build</h3><p style="color: var(--text-body); margin: 0px;">We develop ventures, brands, and strategies from the ground up — turning ideas into structured, investable, operational businesses.</p></div></div><div style="border-top: 2px solid var(--accent); padding-top: 1.25rem;"><div data-trv="step-card" class="" style="display: flex; flex-direction: column; gap: 0.75rem;"><span style="font-family: var(--font-heading); font-weight: var(--font-weight-medium); font-size: var(--text-h3); color: var(--accent); line-height: 1;">02</span><h3 style="font-size: var(--text-h4); margin-top: 0.25rem;">Connect</h3><p style="color: var(--text-body); margin: 0px;">We link producers to buyers, businesses to partners, and brands to audiences — opening access to local and international markets.</p></div></div><div style="border-top: 2px solid var(--accent); padding-top: 1.25rem;"><div data-trv="step-card" class="" style="display: flex; flex-direction: column; gap: 0.75rem;"><span style="font-family: var(--font-heading); font-weight: var(--font-weight-medium); font-size: var(--text-h3); color: var(--accent); line-height: 1;">03</span><h3 style="font-size: var(--text-h4); margin-top: 0.25rem;">Scale</h3><p style="color: var(--text-body); margin: 0px;">We install the systems, partnerships, and execution discipline that turn early traction into sustainable, long-term growth.</p></div></div></div></div></section><section id="divisions" class="scheme-1 t-section"><div class="t-container"><div data-trv="section-heading" class="" style="text-align: center; max-width: var(--container-md); margin-inline: auto;"><p class="t-eyebrow" style="margin: 0px 0px 0.75rem;">What We Do</p><h2 style="font-size: var(--text-h2); margin-bottom: 1rem;">Five divisions. One platform for growth.</h2><p style="font-size: var(--text-large); color: var(--text-body); line-height: 1.5;">Trovanta operates through multiple business divisions and strategic initiatives designed to create value across industries.</p></div><div class="trv-div-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: var(--space-16);"><div data-trv="division-card" class="" style="position: relative; display: flex; flex-direction: column; gap: 1rem; padding: 2rem; background: var(--color-white); border: 1px solid var(--border-subtle); border-radius: var(--radius-card); height: 100%;"><span aria-hidden="true" style="position: absolute; top: 0px; left: 2rem; right: 2rem; height: 3px; background: var(--color-sea-green); border-radius: 0px 0px 3px 3px;"></span><div style="display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;"><h3 style="font-size: var(--text-h4);">Agriculture</h3><span style="font-family: var(--font-heading); font-size: var(--text-h5); color: var(--color-sea-green); opacity: 0.5;">01</span></div><p style="color: var(--text-body); margin: 0px;">Strengthening agricultural value chains and improving access between producers, buyers, and markets.</p><ul style="list-style: none; margin: 0.5rem 0px 0px; padding: 0px; display: flex; flex-direction: column; gap: 0.6rem;"><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-sea-green);"></span><span>Agribusiness consulting</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-sea-green);"></span><span>Market access solutions</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-sea-green);"></span><span>Agricultural trade facilitation</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-sea-green);"></span><span>Supply chain development</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-sea-green);"></span><span>Agricultural investment opportunities</span></li></ul></div><div data-trv="division-card" class="" style="position: relative; display: flex; flex-direction: column; gap: 1rem; padding: 2rem; background: var(--color-white); border: 1px solid var(--border-subtle); border-radius: var(--radius-card); height: 100%;"><span aria-hidden="true" style="position: absolute; top: 0px; left: 2rem; right: 2rem; height: 3px; background: var(--color-forest); border-radius: 0px 0px 3px 3px;"></span><div style="display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;"><h3 style="font-size: var(--text-h4);">Trade &amp; Business Development</h3><span style="font-family: var(--font-heading); font-size: var(--text-h5); color: var(--color-forest); opacity: 0.5;">02</span></div><p style="color: var(--text-body); margin: 0px;">Helping businesses expand their reach and connect with valuable opportunities in local and international markets.</p><ul style="list-style: none; margin: 0.5rem 0px 0px; padding: 0px; display: flex; flex-direction: column; gap: 0.6rem;"><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-forest);"></span><span>Business matchmaking</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-forest);"></span><span>Strategic partnerships</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-forest);"></span><span>Import &amp; export opportunities</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-forest);"></span><span>Market entry support</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-forest);"></span><span>Commercial networking</span></li></ul></div><div data-trv="division-card" class="" style="position: relative; display: flex; flex-direction: column; gap: 1rem; padding: 2rem; background: var(--color-white); border: 1px solid var(--border-subtle); border-radius: var(--radius-card); height: 100%;"><span aria-hidden="true" style="position: absolute; top: 0px; left: 2rem; right: 2rem; height: 3px; background: var(--color-gold-dark); border-radius: 0px 0px 3px 3px;"></span><div style="display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;"><h3 style="font-size: var(--text-h4);">Branding &amp; Creative Strategy</h3><span style="font-family: var(--font-heading); font-size: var(--text-h5); color: var(--color-gold-dark); opacity: 0.5;">03</span></div><p style="color: var(--text-body); margin: 0px;">Helping businesses communicate effectively and stand out in competitive markets.</p><ul style="list-style: none; margin: 0.5rem 0px 0px; padding: 0px; display: flex; flex-direction: column; gap: 0.6rem;"><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-gold-dark);"></span><span>Brand development</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-gold-dark);"></span><span>Brand positioning</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-gold-dark);"></span><span>Marketing strategy</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-gold-dark);"></span><span>Creative direction</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-gold-dark);"></span><span>Visual identity consulting</span></li></ul></div><div data-trv="division-card" class="" style="position: relative; display: flex; flex-direction: column; gap: 1rem; padding: 2rem; background: var(--color-white); border: 1px solid var(--border-subtle); border-radius: var(--radius-card); height: 100%;"><span aria-hidden="true" style="position: absolute; top: 0px; left: 2rem; right: 2rem; height: 3px; background: var(--color-zest); border-radius: 0px 0px 3px 3px;"></span><div style="display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;"><h3 style="font-size: var(--text-h4);">Media &amp; Content Development</h3><span style="font-family: var(--font-heading); font-size: var(--text-h5); color: var(--color-zest); opacity: 0.5;">04</span></div><p style="color: var(--text-body); margin: 0px;">Helping brands connect with audiences through compelling and purposeful content.</p><ul style="list-style: none; margin: 0.5rem 0px 0px; padding: 0px; display: flex; flex-direction: column; gap: 0.6rem;"><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-zest);"></span><span>Content strategy</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-zest);"></span><span>Digital storytelling</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-zest);"></span><span>Brand media production</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-zest);"></span><span>Creative campaigns</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-zest);"></span><span>Business communications</span></li></ul></div><div data-trv="division-card" class="" style="position: relative; display: flex; flex-direction: column; gap: 1rem; padding: 2rem; background: var(--color-white); border: 1px solid var(--border-subtle); border-radius: var(--radius-card); height: 100%;"><span aria-hidden="true" style="position: absolute; top: 0px; left: 2rem; right: 2rem; height: 3px; background: var(--color-neutral-darker); border-radius: 0px 0px 3px 3px;"></span><div style="display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;"><h3 style="font-size: var(--text-h4);">Consulting &amp; Advisory</h3><span style="font-family: var(--font-heading); font-size: var(--text-h5); color: var(--color-neutral-darker); opacity: 0.5;">05</span></div><p style="color: var(--text-body); margin: 0px;">Working with clients to identify challenges, develop solutions, and implement strategies for sustainable growth.</p><ul style="list-style: none; margin: 0.5rem 0px 0px; padding: 0px; display: flex; flex-direction: column; gap: 0.6rem;"><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-neutral-darker);"></span><span>Business consulting &amp; growth strategy</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-neutral-darker);"></span><span>Business planning</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-neutral-darker);"></span><span>Market research</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-neutral-darker);"></span><span>Operational development</span></li><li style="display: flex; gap: 0.6rem; align-items: flex-start; font-size: var(--text-medium); color: var(--text-body);"><span aria-hidden="true" style="margin-top: 0.55em; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: var(--color-neutral-darker);"></span><span>Opportunity assessment</span></li></ul></div><div style="display: flex; flex-direction: column; justify-content: center; gap: 1rem; padding: 2rem; border-radius: var(--radius-card); background: var(--color-forest); color: var(--color-white);"><h3 style="font-size: var(--text-h4); color: var(--color-white);">Future Growth Sectors</h3><p style="color: var(--color-white-60); margin: 0px;">Trovanta is built as a multi-sector platform. As we grow, we continue to identify and develop new ventures and opportunities across emerging industries.</p><a data-trv="button" data-variant="link" class="" href="#contact" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-family: var(--font-body); font-weight: var(--font-weight-medium); line-height: 1.2; border-radius: 0px; cursor: pointer; opacity: 1; transition: background var(--dur-base) var(--ease-standard), border-color var(--dur-base) var(--ease-standard), transform var(--dur-fast) var(--ease-standard); white-space: nowrap; text-decoration: none; padding: 0.25rem 0px; font-size: var(--text-medium); background: transparent; color: var(--color-gold-light); border: 1px solid transparent; margin-top: 0.5rem;">Partner with us<span>→</span></a></div></div></div></section><section id="initiatives" class="scheme-2 t-section"><div class="t-container"><div data-trv="section-heading" class="" style="text-align: center; max-width: var(--container-md); margin-inline: auto;"><p class="t-eyebrow" style="margin: 0px 0px 0.75rem;">Current Focus Areas</p><h2 style="font-size: var(--text-h2); margin-bottom: 1rem;">Where our energy is going right now</h2><p style="font-size: var(--text-large); color: var(--text-body); line-height: 1.5;">Trovanta is an enterprise in active development. Rather than overstate a track record, we'd rather show you exactly what we're building today.</p></div><div class="trv-focus-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: var(--space-16);"><div data-trv="focus-card" class="" style="display: flex; flex-direction: column; gap: 1rem; padding: 2rem; background: var(--color-white); border: 1px solid var(--border-subtle); border-radius: var(--radius-card); height: 100%;"><span data-trv="badge" class="" style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.25rem 0.625rem; font-family: var(--font-body); font-size: var(--text-small); font-weight: var(--font-weight-semibold); line-height: 1.3; border-radius: var(--radius-badge); background: var(--color-sea-green-lightest); color: var(--color-sea-green-dark);"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 50%; background: currentcolor;"></span>Active</span><h3 style="font-size: var(--text-h5);">Agricultural Trade &amp; Market Access</h3><p style="color: var(--text-body); margin: 0px;">Building direct relationships between Nigerian producers and buyers — mapping value chains, facilitating trade, and opening market access at home and abroad.</p></div><div data-trv="focus-card" class="" style="display: flex; flex-direction: column; gap: 1rem; padding: 2rem; background: var(--color-white); border: 1px solid var(--border-subtle); border-radius: var(--radius-card); height: 100%;"><span data-trv="badge" class="" style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.25rem 0.625rem; font-family: var(--font-body); font-size: var(--text-small); font-weight: var(--font-weight-semibold); line-height: 1.3; border-radius: var(--radius-badge); background: var(--color-sea-green-lightest); color: var(--color-sea-green-dark);"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 50%; background: currentcolor;"></span>Active</span><h3 style="font-size: var(--text-h5);">Branding &amp; Media for Growing Businesses</h3><p style="color: var(--text-body); margin: 0px;">Developing brand identities, content, and campaigns that help Nigerian SMEs and startups stand out and win customers.</p></div><div data-trv="focus-card" class="" style="display: flex; flex-direction: column; gap: 1rem; padding: 2rem; background: var(--color-white); border: 1px solid var(--border-subtle); border-radius: var(--radius-card); height: 100%;"><span data-trv="badge" class="" style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.25rem 0.625rem; font-family: var(--font-body); font-size: var(--text-small); font-weight: var(--font-weight-semibold); line-height: 1.3; border-radius: var(--radius-badge); background: var(--color-zest-lightest); color: var(--color-zest-dark);"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 50%; background: currentcolor;"></span>In Development</span><h3 style="font-size: var(--text-h5);">Trade Partnerships &amp; Matchmaking</h3><p style="color: var(--text-body); margin: 0px;">Growing a network of commercial partners and connecting businesses to import, export, and distribution opportunities.</p></div><div data-trv="focus-card" class="" style="display: flex; flex-direction: column; gap: 1rem; padding: 2rem; background: var(--color-white); border: 1px solid var(--border-subtle); border-radius: var(--radius-card); height: 100%;"><span data-trv="badge" class="" style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.25rem 0.625rem; font-family: var(--font-body); font-size: var(--text-small); font-weight: var(--font-weight-semibold); line-height: 1.3; border-radius: var(--radius-badge); background: var(--color-zest-lightest); color: var(--color-zest-dark);"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 50%; background: currentcolor;"></span>In Development</span><h3 style="font-size: var(--text-h5);">Advisory for Entrepreneurs</h3><p style="color: var(--text-body); margin: 0px;">Business planning, market research, and opportunity assessment for founders preparing to launch or scale.</p></div></div><div style="margin-top: 2.5rem; display: flex; align-items: center; gap: 0.75rem; justify-content: center; padding: 1rem 1.5rem; border-radius: var(--radius-button); background: var(--color-white); border: 1px solid var(--border-subtle); max-width: fit-content; margin-inline: auto; text-align: center;"><span aria-hidden="true" style="display: grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: 50%; background: var(--color-sea-green-lightest); color: var(--color-sea-green-dark); font-size: 0.9rem;">✓</span><span style="color: var(--text-body); font-size: var(--text-medium);">Trovanta Ltd is a <strong style="color: var(--text-strong);">fully registered Nigerian company</strong> with the Corporate Affairs Commission (CAC).</span></div></div></section><section id="approach" class="scheme-1 t-section"><div class="t-container"><div class="trv-about-grid" style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: var(--space-16);"><div><p class="t-eyebrow" style="margin-bottom: 0.75rem;">Our Approach</p><h2 style="margin-bottom: 1.5rem;">How we work</h2><div style="margin-top: 2rem;"><h3 style="font-size: var(--text-h6); margin-bottom: 1rem;">Who we serve</h3><div style="display: flex; flex-wrap: wrap; gap: 0.6rem;"><span style="padding: 0.5rem 0.9rem; border-radius: var(--radius-full); border: 1px solid var(--border-subtle); font-size: var(--text-small); color: var(--text-body);">Startups</span><span style="padding: 0.5rem 0.9rem; border-radius: var(--radius-full); border: 1px solid var(--border-subtle); font-size: var(--text-small); color: var(--text-body);">Small businesses</span><span style="padding: 0.5rem 0.9rem; border-radius: var(--radius-full); border: 1px solid var(--border-subtle); font-size: var(--text-small); color: var(--text-body);">Growing brands</span><span style="padding: 0.5rem 0.9rem; border-radius: var(--radius-full); border: 1px solid var(--border-subtle); font-size: var(--text-small); color: var(--text-body);">Agricultural enterprises</span><span style="padding: 0.5rem 0.9rem; border-radius: var(--radius-full); border: 1px solid var(--border-subtle); font-size: var(--text-small); color: var(--text-body);">Entrepreneurs</span><span style="padding: 0.5rem 0.9rem; border-radius: var(--radius-full); border: 1px solid var(--border-subtle); font-size: var(--text-small); color: var(--text-body);">Investors</span><span style="padding: 0.5rem 0.9rem; border-radius: var(--radius-full); border: 1px solid var(--border-subtle); font-size: var(--text-small); color: var(--text-body);">Organizations</span><span style="padding: 0.5rem 0.9rem; border-radius: var(--radius-full); border: 1px solid var(--border-subtle); font-size: var(--text-small); color: var(--text-body);">Commercial partners</span></div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;"><div style="padding: 1.5rem; border-radius: var(--radius-card); background: var(--color-neutral-lightest);"><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--accent);">01</span><h4 style="font-size: var(--text-h6); margin: 0.75rem 0px 0.4rem;">Strategic Thinking</h4><p style="color: var(--text-body); font-size: var(--text-medium); margin: 0px;">Every project begins with understanding objectives, opportunities, and long-term goals.</p></div><div style="padding: 1.5rem; border-radius: var(--radius-card); background: var(--color-neutral-lightest);"><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--accent);">02</span><h4 style="font-size: var(--text-h6); margin: 0.75rem 0px 0.4rem;">Practical Execution</h4><p style="color: var(--text-body); font-size: var(--text-medium); margin: 0px;">Ideas only create value when implemented. We focus on delivering practical, actionable solutions.</p></div><div style="padding: 1.5rem; border-radius: var(--radius-card); background: var(--color-neutral-lightest);"><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--accent);">03</span><h4 style="font-size: var(--text-h6); margin: 0.75rem 0px 0.4rem;">Partnership-Driven Growth</h4><p style="color: var(--text-body); font-size: var(--text-medium); margin: 0px;">Collaboration creates stronger outcomes than working alone.</p></div><div style="padding: 1.5rem; border-radius: var(--radius-card); background: var(--color-neutral-lightest);"><span style="font-family: var(--font-heading); font-size: var(--text-h6); color: var(--accent);">04</span><h4 style="font-size: var(--text-h6); margin: 0.75rem 0px 0.4rem;">Long-Term Value Creation</h4><p style="color: var(--text-body); font-size: var(--text-medium); margin: 0px;">The goal is not short-term gains but sustainable growth and lasting impact.</p></div></div></div></div></section><section id="values" class="scheme-3 t-section"><div class="t-container"><div data-trv="section-heading" class="" style="text-align: center; max-width: var(--container-md); margin-inline: auto;"><p class="t-eyebrow" style="margin: 0px 0px 0.75rem;">Core Values</p><h2 style="font-size: var(--text-h2); margin-bottom: 0px;">What we stand for</h2></div><div class="trv-values-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: var(--space-16);"><div style="padding: 1.75rem; border-radius: var(--radius-card); background: var(--color-white); border: 1px solid var(--border-subtle);"><h3 style="font-size: var(--text-h5); margin-bottom: 0.5rem;">Excellence</h3><p style="color: var(--text-body); margin: 0px;">Delivering high-quality work and maintaining professional standards.</p></div><div style="padding: 1.75rem; border-radius: var(--radius-card); background: var(--color-white); border: 1px solid var(--border-subtle);"><h3 style="font-size: var(--text-h5); margin-bottom: 0.5rem;">Innovation</h3><p style="color: var(--text-body); margin: 0px;">Finding creative solutions to business challenges and opportunities.</p></div><div style="padding: 1.75rem; border-radius: var(--radius-card); background: var(--color-white); border: 1px solid var(--border-subtle);"><h3 style="font-size: var(--text-h5); margin-bottom: 0.5rem;">Integrity</h3><p style="color: var(--text-body); margin: 0px;">Operating with honesty, transparency, and accountability.</p></div><div style="padding: 1.75rem; border-radius: var(--radius-card); background: var(--color-white); border: 1px solid var(--border-subtle);"><h3 style="font-size: var(--text-h5); margin-bottom: 0.5rem;">Collaboration</h3><p style="color: var(--text-body); margin: 0px;">Building meaningful partnerships that create mutual value.</p></div><div style="padding: 1.75rem; border-radius: var(--radius-card); background: var(--color-white); border: 1px solid var(--border-subtle);"><h3 style="font-size: var(--text-h5); margin-bottom: 0.5rem;">Growth</h3><p style="color: var(--text-body); margin: 0px;">Continuously developing people, businesses, and opportunities.</p></div><div style="padding: 1.75rem; border-radius: var(--radius-card); background: var(--color-white); border: 1px solid var(--border-subtle);"><h3 style="font-size: var(--text-h5); margin-bottom: 0.5rem;">Impact</h3><p style="color: var(--text-body); margin: 0px;">Focusing on outcomes that create measurable and lasting value.</p></div></div></div></section><section id="leadership" class="scheme-1 t-section"><div class="t-container"><p class="t-eyebrow" style="margin-bottom: 0.75rem; text-align: center;">Leadership</p><h2 style="text-align: center; margin-bottom: var(--space-12);">The person behind Trovanta</h2><div class="trv-founder" style="display: grid; grid-template-columns: 0.7fr 1fr; gap: var(--space-12); align-items: center; max-width: var(--container-xl); margin-inline: auto;"><div style="aspect-ratio: 4 / 5; border-radius: var(--radius-card); overflow: hidden; position: relative; background: var(--color-forest);"><img src="assets/b7b0ecc5.jpg" alt="Joshua Michael, Founder and CEO of Trovanta Ltd" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;"></div><div><h3 style="font-size: var(--text-h3); margin-bottom: 0.25rem;">Joshua Michael</h3><p style="color: var(--accent); font-weight: var(--font-weight-semibold); margin-bottom: 1.25rem;">Founder &amp; Chief Executive Officer</p><p style="color: var(--text-body); font-size: var(--text-large); margin-bottom: 1.5rem;">Joshua Michael founded Trovanta on a simple conviction: African businesses don't lack ideas — they lack access, structure, and execution. He leads the company's strategy, partnerships, and ventures across its five divisions.</p><blockquote style="margin: 0px; padding-left: 1.25rem; border-left: 3px solid var(--color-gold);"><p style="font-family: var(--font-heading); font-size: var(--text-h5); font-style: italic; color: var(--text-strong); margin: 0px;">"A trusted platform for business development, opportunity creation, strategic partnerships, and enterprise growth — across Africa and international markets."</p><cite style="display: block; margin-top: 0.75rem; font-style: normal; font-size: var(--text-small); color: var(--text-muted);">The Long-Term Vision</cite></blockquote></div></div></div></section><section id="contact" class="scheme-inverse t-section"><div class="t-container" style="text-align: center; max-width: var(--container-lg);"><p class="t-eyebrow" style="margin-bottom: 0.75rem; color: var(--color-gold-light);">Get in Touch</p><h2 style="color: var(--color-white); margin-bottom: 1.25rem;">Let's build something together</h2><p style="color: var(--color-white-60); font-size: var(--text-large); margin-bottom: 2rem;">Whether you're an entrepreneur with an idea, a business seeking new markets, or a partner exploring opportunities — we'd like to hear from you.</p><a data-trv="button" data-variant="inverse" class="" href="mailto:trovanta.ng@gmail.com" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-family: var(--font-body); font-weight: var(--font-weight-medium); line-height: 1.2; border-radius: var(--radius-button); cursor: pointer; opacity: 1; transition: background var(--dur-base) var(--ease-standard), border-color var(--dur-base) var(--ease-standard), transform var(--dur-fast) var(--ease-standard); white-space: nowrap; padding: 1rem 2rem; font-size: var(--text-large); background: var(--color-white); color: var(--color-neutral-darkest); border-color: var(--color-white); border-top-style: ; border-top-width: ; border-right-style: ; border-right-width: ; border-bottom-style: ; border-bottom-width: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ;">Send Us an Email</a><p style="margin-top: 1.5rem; color: var(--color-white-40); font-size: var(--text-small);">Trovanta Ltd · Registered with the CAC · Nigeria</p></div></section></main><footer class="scheme-2" style="padding-block: var(--space-16); padding-inline: var(--section-x);"><div class="t-container"><div class="trv-footer-top" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; align-items: center; padding-bottom: 2rem; border-bottom: 1px solid var(--border-subtle);"><a href="#top" class="t-logo"><span class="t-logo__mark">T</span><span class="t-logo__word">Trovanta<b>Ltd</b></span></a><p style="color: var(--text-muted); font-size: var(--text-medium); max-width: 32ch;">Building Businesses. Creating Opportunities. Driving Growth.</p><nav style="display: flex; flex-wrap: wrap; gap: 1.25rem;"><a href="#about" style="color: var(--text-body); font-size: var(--text-small);">About</a><a href="#divisions" style="color: var(--text-body); font-size: var(--text-small);">What We Do</a><a href="#initiatives" style="color: var(--text-body); font-size: var(--text-small);">Initiatives</a><a href="#values" style="color: var(--text-body); font-size: var(--text-small);">Values</a><a href="#contact" style="color: var(--text-body); font-size: var(--text-small);">Contact</a></nav></div><p style="margin-top: 1.5rem; color: var(--text-muted); font-size: var(--text-small);">© 2026 Trovanta Ltd. All rights reserved.</p></div></footer></div>
+<!-- Image assets routed through real <img> so the standalone bundler inlines them as data URIs -->
+<img id="__img_hero" src="assets/8311a178.jpg" alt="" hidden="">
+<img id="__img_founder" src="assets/b7b0ecc5.jpg" alt="" hidden="">
+<style>
+.trv-nav-links.trv-open { display: flex !important; position: fixed; top: 64px; left: 0; right: 0; flex-direction: column; align-items: stretch; background: #ffffff; border-bottom: 1px solid rgba(7,3,9,0.08); box-shadow: 0 14px 30px rgba(7,3,9,0.10); padding: 10px 18px 18px; z-index: 999; }
+.trv-nav-links.trv-open a { padding: 12px 6px; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+<script>
+(function () {
+  var burger = document.querySelector('.trv-nav-burger');
+  var links = document.querySelector('.trv-nav-links');
+  if (burger && links) {
+    burger.addEventListener('click', function () {
+      links.classList.toggle('trv-open');
+      burger.setAttribute('aria-expanded', links.classList.contains('trv-open'));
+    });
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') links.classList.remove('trv-open');
+    });
+  }
+})();
+</script>
+</body></html>
